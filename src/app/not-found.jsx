@@ -5,7 +5,7 @@ import React from "react";
 
 const NotFound = () => {
   return (
-    <div className="min-h-[85vh] flex flex-col items-center justify-center bg-[#] px-6 py-12 text-center selection:bg-[#244D3F] selection:text-white">
+    <div className="min-h-[85vh] flex flex-col items-center justify-center bg-[#F8FAFC] px-6 py-12 text-center selection:bg-[#244D3F] selection:text-white">
       <div className="max-w-lg w-full space-y-8">
         <div className="relative flex justify-center items-center select-none">
           <div className="absolute w-64 h-64 bg-[#244D3F] blur-[100px] rounded-full "></div>

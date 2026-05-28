@@ -41,7 +41,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className="mx-7 md:mx-20">
+    <div className="mx-7 md:mx-20 ">
       <div className="navbar flex justify-between items-center shadow-b-sm px-0">
         <div>
           <Link href="/" className="font-bold text-[#1F2937] text-3xl ">
