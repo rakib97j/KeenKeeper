@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React from "react";
 
+
+
 const NotFound = () => {
   return (
     <div className="min-h-[85vh] flex flex-col items-center justify-center bg-[#F8FAFC] px-6 py-12 text-center selection:bg-[#244D3F] selection:text-white">
