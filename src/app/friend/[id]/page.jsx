@@ -1,6 +1,7 @@
 import React from "react";
 import FriendsDetails from "../../../../public/friendsData.json";
 import Link from "next/link";
+import { Archive, BellRing, Delete, MessageSquareText, PhoneCall, Trash2, Video } from "lucide-react";
 
 ("use clint");
 
@@ -28,11 +29,11 @@ const DetailsPage = async (props) => {
   return (
     <div className="bg-[#F8FAFC]">
       <div className=" lg:container  mx-6 lg:mx-auto  py-20">
-        <div className="flex gap-6">
+        <div className="md:flex flex-row  gap-6">
           {/* Left Side */}
-          <div >
+          <div>
             {/* 1st Part */}
-            <div className="bg-white p-6 shadow-lg rounded-lg ">
+            <div className="bg-white p-6 shadow-lg rounded-lg mb-4 ">
               <img
                 src={singleFriend.picture}
                 alt={singleFriend.name}
@@ -68,11 +69,75 @@ const DetailsPage = async (props) => {
               <p className="text-center">{singleFriend.email}</p>
             </div>
             {/* 2nd Part  */}
-            <div></div>
+            <div>
+              <div className="bg-white rounded-lg my-2 ">
+                <p className="flex font-bold text-base  p-4 gap-2  justify-center border border-[#E9E9E9] rounded-sm ">
+                  <BellRing /> Snooze 2 weeks
+                </p>
+              </div>
+              <div className="bg-white rounded-lg my-2 ">
+                <p className="flex font-bold text-base text-[#1F2937] p-4 gap-2  justify-center border border-[#E9E9E9] rounded-sm ">
+                  <Archive /> Archive
+                </p>
+              </div>
+              <div className="bg-white rounded-lg my-2 ">
+                <p className="flex p-4 gap-2  text-red-600 font-bold text-base justify-center border border-[#E9E9E9] rounded-sm ">
+                  <Trash2 />
+                  Delete
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Right Side */}
-          <div></div>
+          <div className="w-full ">
+            {/* First part */}
+            <div className="grid  md:grid-cols-3 gap-6">
+              <div className="bg-white  py-9 px-4 shadow-lg rounded-lg text-center ">
+                <p>{singleFriend.days_since_contact}</p>
+                <p>Days Since Contact</p>
+              </div>
+              <div className="bg-white  py-9 px-4 shadow-lg rounded-lg text-center ">
+                <p>{singleFriend.goal}</p>
+                <p>Goal (Days)</p>
+              </div>
+              <div className="bg-white  py-9 px-4 shadow-lg rounded-lg text-center ">
+                <p>{singleFriend.next_due_date}</p>
+                <p>Next Due</p>
+              </div>
+            </div>
+            {/* second part */}
+            <div className="bg-white  py-11 px-4 shadow-lg rounded-lg text-center  my-7 ">
+              <div className="flex justify-between">
+                <h1>Relationship Goal</h1>
+                <p className="btn">Edit</p>
+              </div>
+              <p className="text-start">
+                Connect every <span>{singleFriend.goal}Days</span>
+              </p>
+            </div>
+            {/* last functional part */}
+            <div className="bg-white p-11  shadow-lg rounded-lg">
+              <h1>Quick Check-In</h1>
+              {/* Call Text btn */}
+              <div className="grid grid-cols-3 gap-4  ">
+                <div className="p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg ">
+                  {" "}
+                  <PhoneCall /> Call
+                </div>
+                <div className="p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg  ">
+                  {" "}
+                  <MessageSquareText /> test
+                </div>
+                <div className="  p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg  ">
+                  <p className="">
+                    {" "}
+                    <Video /> Video
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
