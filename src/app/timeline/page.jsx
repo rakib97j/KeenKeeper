@@ -6,11 +6,7 @@ export const metadata = {
 };
 
 const TimeLinePage = () => {
-    return (
-        <div>
-            this is timeline page
-        </div>
-    );
+    return <div>Timeline</div>;
 };
 
 export default TimeLinePage;

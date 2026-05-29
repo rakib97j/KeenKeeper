@@ -6,11 +6,7 @@ export const metadata = {
 };
 
 const StatsPage = () => {
-    return (
-        <div>
-            this is state page
-        </div>
-    );
+    return <div>Friendship Analytics</div>;
 };
 
 export default StatsPage;

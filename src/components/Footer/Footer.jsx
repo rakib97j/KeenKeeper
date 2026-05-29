@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="container mx-auto pt-20 pb-7">
       <div className="text-center">
         <div className="flex justify-center mb-4">
-          <Image src={Logo} alt="Facebook" />
+          <Image src={Logo} alt="Facebook" loading="eager" />
         </div>
         <p className="text-base font-normal text-[#ffffff80] leading-7 md:mx-0 mx-5">
           Your personal shelf of meaningful connections. Browse, tend, and
@@ -24,18 +24,18 @@ const Footer = () => {
 
         <ul className="cursor-pointer flex justify-center gap-3 mb-10">
           <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
-            <a href="">
-              <Image src={Instagram} alt="Instagram " />
+            <a href="https://www.instagram.com/rakib97j/" target="_blank">
+              <Image src={Instagram} alt="Instagram " placeholder="empty" />
             </a>
           </li>
           <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
-            <a href="">
-              <Image src={FaceBook} alt="Facebook" />
+            <a href="https://www.facebook.com/rakib97j" target="_blank">
+              <Image src={FaceBook} alt="Facebook" placeholder="empty" />
             </a>
           </li>
           <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
-            <a href="">
-              <Image src={X} alt="X" />
+            <a href="https://x.com/rakib97j" target="_blank">
+              <Image src={X} alt="X" placeholder="empty" />
             </a>
           </li>
         </ul>
