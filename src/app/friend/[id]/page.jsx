@@ -123,7 +123,7 @@ const DetailsPage = async (props) => {
               </div>
             </div>
             {/* second part */}
-            <div className="bg-white  py-11 px-4 shadow-lg rounded-lg text-center  my-7 ">
+            <div className="bg-white  py-11 px-4 shadow-lg rounded-lg text-center  my-4 ">
               <div className="flex justify-between">
                 <h1 className="text-[#244D3F] text-xl font-semibold ">
                   Relationship Goal
@@ -140,7 +140,7 @@ const DetailsPage = async (props) => {
               </p>
             </div>
             {/* last functional part */}
-            <div className="bg-white p-11  shadow-lg rounded-lg">
+            <div className="bg-white p-9  shadow-lg rounded-lg">
               <h1 className="text-[#244D3F] text-xl font-semibold mb-4">
                 Quick Check-In
               </h1>
