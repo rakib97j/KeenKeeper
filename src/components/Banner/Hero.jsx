@@ -1,6 +1,7 @@
 import { Plus } from 'lucide-react';
 import React, { Suspense } from 'react';
 import Friends from '../Friends Card/Friends';
+import FriendPage from '@/app/friend/page';
 
 const Hero = () => {
     return (
@@ -57,7 +58,7 @@ const Hero = () => {
 
         <div>
           
-            <Friends></Friends>
+           <FriendPage></FriendPage>
     
         </div>
       </div>
