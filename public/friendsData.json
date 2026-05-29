@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Rakib Hassan",
+    "picture": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&h=300",
+    "email": "rakibahmed@gmail.com",
+    "days_since_contact": 5,
+    "status": "active",
+    "tags": ["university", "gaming"],
+    "bio": "Coding partner from CS freshman year. Big esports fan.",
+    "goal": 7,
+    "next_due_date": "2026-06-02"
+  },
+  {
+    "id": 2,
+    "name": "Sakib Hasan",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300",
+    "email": "sakibhasan@yahoo.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["Family", "neighbor"],
+    "bio": "Grew up on the same street. Plays cricket together whenever he's in town.",
+    "goal": 14,
+    "next_due_date": "2026-05-22"
+  },
+  {
+    "id": 3,
+    "name": "Faysal Mahmud",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300",
+    "email": "faysalmahmud@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["institute", "tech"],
+    "bio": "Current coworker on the development team. Great sounding board for system architecture.",
+    "goal": 7,
+    "next_due_date": "2026-06-04"
+  },
+  {
+    "id": 4,
+    "name": "Robin Chowdhury",
+    "picture": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&h=300",
+    "email": "robinchowdhury@yahoo.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["high school", "travel"],
+    "bio": "High school backpacker buddy. Traveled through Sajek Valley together.",
+    "goal": 30,
+    "next_due_date": "2026-05-13"
+  },
+  {
+    "id": 5,
+    "name": "Soykot Islam",
+    "picture": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&h=300",
+    "email": "soykotislam@gmail.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["friend", "gym"],
+    "bio": "Gym partner and accountability buddy. Very disciplined guy.",
+    "goal": 3,
+    "next_due_date": "2026-05-30"
+  },
+  {
+    "id": 6,
+    "name": "Jimi Rahman",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&h=300",
+    "email": "jimirahman@yahoo.com",
+    "days_since_contact": 12,
+    "status": "active",
+    "tags": ["friend", "bandmate"],
+    "bio": "Guitarist in our jam group. Met at a local gig.",
+    "goal": 14,
+    "next_due_date": "2026-05-30"
+  },
+  {
+    "id": 7,
+    "name": "Nowshin Nehreen",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300",
+    "email": "nowshinnehreen@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["friend", "mentor"],
+    "bio": "Senior from university who helped me land my first tech internship.",
+    "goal": 30,
+    "next_due_date": "2026-06-20"
+  },
+  {
+    "id": 8,
+    "name": "Rasel Khan",
+    "picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&h=300",
+    "email": "raselkhan@yahoo.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["distant friend"],
+    "bio": "Old family friend who moved abroad. Need to catch up on a call soon.",
+    "goal": 45,
+    "next_due_date": "2026-05-13"
+  },
+  {
+    "id": 9,
+    "name": "Emon Hossain",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&h=300",
+    "email": "emonhossain@gmail.com",
+    "days_since_contact": 0,
+    "status": "active",
+    "tags": ["roommate", "college"],
+    "bio": "Current roommate. Always argues about whose turn it is to do the dishes.",
+    "goal": 1,
+    "next_due_date": "2026-05-29"
+  },
+  {
+    "id": 10,
+    "name": "Marzia Mim",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&h=300",
+    "email": "marziamim@yahoo.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["photography", "creative"],
+    "bio": "Met during a photowalk. Amazing eye for portrait photography.",
+    "goal": 10,
+    "next_due_date": "2026-05-23"
+  }
+]
