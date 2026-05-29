@@ -1,5 +1,5 @@
 import { Plus } from 'lucide-react';
-import React from 'react';
+import React, { Suspense } from 'react';
 import Friends from '../Friends Card/Friends';
 
 const Hero = () => {
@@ -49,16 +49,17 @@ const Hero = () => {
           <p className="border mb-7 text-[#E9E9E9]"></p>
         </div>
 
-        <h1 className="font-semibold text-2xl text-[#1F2937] mb-4">Your Friends</h1>
-
+        <h1 className="font-semibold text-2xl text-[#1F2937] mb-4">
+          Your Friends
+        </h1>
 
         {/* Friends Cards  */}
 
         <div>
+          
             <Friends></Friends>
+    
         </div>
-
-
       </div>
     );
 };
