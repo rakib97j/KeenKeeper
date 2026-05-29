@@ -1,12 +1,19 @@
 import { Shield } from "lucide-react";
 import React from "react";
+import Image from "next/image";
+import Instagram from '../../../public/instagram.png'
+import FaceBook from '../../../public/facebook.png'
+import X from '../../../public/twitter.png'
+import Logo from '../../../public/logo-xl.png'
 
 
 const Footer = () => {
   return (
     <div className="container mx-auto pt-20 pb-7">
       <div className="text-center">
-        <h1 className="text-5xl font-black text-white mb-3.5">Keenkeeper</h1>
+        <div className="flex justify-center mb-4">
+          <Image src={Logo} alt="Facebook" />
+        </div>
         <p className="text-base font-normal text-[#ffffff80] leading-7 md:mx-0 mx-5">
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the relationships that matter most.
@@ -16,22 +23,19 @@ const Footer = () => {
         </p>
 
         <ul className="cursor-pointer flex justify-center gap-3 mb-10">
-          <li className="p-2.5 bg-[#FFFFFF] rounded-full text-[#101727]">
+          <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
             <a href="">
-              {" "}
-              <Shield />{" "}
+              <Image src={Instagram} alt="Instagram " />
             </a>
           </li>
-          <li className="p-2.5 bg-[#FFFFFF] rounded-full text-[#101727]">
+          <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
             <a href="">
-              {" "}
-              <Shield />
+              <Image src={FaceBook} alt="Facebook" />
             </a>
           </li>
-          <li className="p-2.5 bg-[#FFFFFF] rounded-full text-[#101727]">
+          <li className="p-1 bg-[#FFFFFF] rounded-full text-[#101727]">
             <a href="">
-              {" "}
-              <Shield />
+              <Image src={X} alt="X" />
             </a>
           </li>
         </ul>
