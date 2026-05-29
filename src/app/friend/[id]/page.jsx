@@ -1,7 +1,15 @@
-import React from "react";
+ 
+ import React from "react";
 import FriendsDetails from "../../../../public/friendsData.json";
-import Link from "next/link";
-import { Archive, BellRing, Delete, MessageSquareText, PhoneCall, Trash2, Video } from "lucide-react";
+import {
+  Archive,
+  BellRing,
+  MessageSquareText,
+  PhoneCall,
+  Trash2,
+  Video,
+} from "lucide-react";
+
 
 ("use clint");
 
@@ -146,20 +154,20 @@ const DetailsPage = async (props) => {
               </h1>
               {/* Call Text btn */}
               <div className="grid grid-cols-3 gap-4  ">
-                <div className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
+                <button className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
                   {" "}
                   <PhoneCall /> Call
-                </div>
-                <div className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
+                </button>
+                <button className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
                   {" "}
                   <MessageSquareText /> test
-                </div>
-                <div className="transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1  p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
+                </button>
+                <button className="transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1  p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
                   <p className="">
                     {" "}
                     <Video /> Video
                   </p>
-                </div>
+                </button>
               </div>
             </div>
           </div>
