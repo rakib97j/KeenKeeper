@@ -9,7 +9,7 @@ const Friends = () => {
     // console.log(FriendsData);
     
     return (
-        <div className='grid grid-cols-4 gap-6'>
+        <div className='grid md:grid-cols-3  md:mx-6 lg:grid-cols-4 gap-6'>
             {
                 FriendsData.map(Friend => <FriendCard key={Friend.id} Friend={Friend}></FriendCard>)
             }
