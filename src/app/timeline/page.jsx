@@ -108,7 +108,7 @@ export default function TimeLinePage() {
 
         {sortedEvents.length === 0 ? (
           <div className="bg-white p-12 text-center border border-[#E9E9E9] rounded-lg shadow-md">
-            <p className="text-red-600 text-lg font-medium">
+            <p className="text-red-600 text-lg font-black">
               No check-in events{" "}
             </p>
           </div>
