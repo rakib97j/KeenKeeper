@@ -20,16 +20,14 @@ export default function TimeLinePage() {
           setTimelineData(parsed);
         } else {
          
-          localStorage.setItem("keenkeeper_timeline", JSON.stringify(DEFAULT_EVENTS));
-          setTimelineData(DEFAULT_EVENTS);
+          setTimelineData([]);
         }
       } else {
-        localStorage.setItem("keenkeeper_timeline", JSON.stringify(DEFAULT_EVENTS));
-        setTimelineData(DEFAULT_EVENTS);
+        setTimelineData([]);
       }
     } catch (e) {
       console.error("Failed to load timeline from localStorage:", e);
-      setTimelineData(DEFAULT_EVENTS);
+      setTimelineData([]);
     }
   }, []);
 
@@ -37,7 +35,7 @@ export default function TimeLinePage() {
     return (
       <div className="bg-[#F8FAFC] min-h-screen py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl font-bold text-[#1E293B] mb-6">Timeline</h1>
+          <h1 className="text-5xl font-bold text-[#1F2937] mb-6">Timeline</h1>
           <div className="w-56 h-10 bg-gray-200 animate-pulse rounded-lg mb-6"></div>
           <div className="space-y-4">
             {[1, 2, 3].map((n) => (
@@ -99,7 +97,7 @@ export default function TimeLinePage() {
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className="w-full md:w-56 p-3 bg-white border border-[#E2E8F0] rounded-lg text-base text-[#475569] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#244D3F] focus:border-[#244D3F] transition-all cursor-pointer"
+            className="w-full md:w-56 p-3 bg-white border  border-[#E2E8F0] rounded-lg text-base text-[#64748B] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#244D3F] focus:border-[#244D3F] transition-all cursor-pointer"
           >
             <option value="All">Filter timeline</option>
             <option value="Call">Call</option>
@@ -108,10 +106,11 @@ export default function TimeLinePage() {
           </select>
         </div>
 
-       
         {sortedEvents.length === 0 ? (
           <div className="bg-white p-12 text-center border border-[#E9E9E9] rounded-lg shadow-md">
-            <p className="text-[#64748B] text-lg font-medium">No check-in events </p>
+            <p className="text-red-600 text-lg font-medium">
+              No check-in events{" "}
+            </p>
           </div>
         ) : (
           <div className="space-y-4">
@@ -128,7 +127,7 @@ export default function TimeLinePage() {
                       with {event.contactName}
                     </span>
                   </h3>
-                  <p className="text-[#64748B] text-sm mt-0.5">{event.date}</p>
+                  <p className="text-[#64748B] font-bold text-sm mt-0.5">{event.date}</p>
                 </div>
               </div>
             ))}
