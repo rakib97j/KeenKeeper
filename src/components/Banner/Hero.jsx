@@ -3,7 +3,7 @@ import { Plus } from "lucide-react";
 import React from "react";
 
 import FriendPage from "@/app/friend/page";
-import { ToastContainer ,toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Hero = () => {
   const notify = () => toast.error("This Function Added Soon .....");
@@ -22,7 +22,6 @@ const Hero = () => {
           {" "}
           <Plus /> Add a Friend
         </button>
-        <ToastContainer  />
 
         <div className="grid md:grid-cols-4 gap-6 mb-10">
           <div className="bg-white p-8 rounded-xl shadow-lg border-0">

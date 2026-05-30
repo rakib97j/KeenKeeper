@@ -4,14 +4,9 @@ import FriendsDetails from "../../../../public/friendsData.json";
 import {
   Archive,
   BellRing,
-  MessageSquareText,
-  PhoneCall,
   Trash2,
-  Video,
 } from "lucide-react";
-
-
-("use clint");
+import QuickCheckIn from "@/components/QuickCheckIn";
 
 export const metadata = {
   title: "Friend",
@@ -148,28 +143,7 @@ const DetailsPage = async (props) => {
               </p>
             </div>
             {/* last functional part */}
-            <div className="bg-white p-9  shadow-lg rounded-lg">
-              <h1 className="text-[#244D3F] text-xl font-semibold mb-4">
-                Quick Check-In
-              </h1>
-              {/* Call Text btn */}
-              <div className="grid grid-cols-3 gap-4  ">
-                <button className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
-                  {" "}
-                  <PhoneCall /> Call
-                </button>
-                <button className=" transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1 p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
-                  {" "}
-                  <MessageSquareText /> test
-                </button>
-                <button className="transform transition-all duration-300 ease-in-out  hover:text-[#244D3F] hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.05)] hover:-translate-y-1  p-4 flex flex-col justify-center items-center gap-2 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg text-[#1F2937] text-lg font-semibold cursor-pointer ">
-                  <p className="">
-                    {" "}
-                    <Video /> Video
-                  </p>
-                </button>
-              </div>
-            </div>
+            <QuickCheckIn contactName={singleFriend.name} />
           </div>
         </div>
       </div>
